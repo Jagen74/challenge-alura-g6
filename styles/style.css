@@ -155,6 +155,11 @@
    bottom: 0;
  }
 
+ .cora {
+    color: #0A3871;
+    font-size: large;    
+ }
+
  /** Media Queries Area
     Mobile View by Default */
 

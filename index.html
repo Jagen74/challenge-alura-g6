@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura||jager74</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">    
+    <script src="app/app.js" defer></script>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="img/Logo.svg" alt="logo alura">
+        <!-- <h1>Encriptador</h1> -->
+    </header>
+
+    <main>
+
+        <section class="container">
+
+            <article class="text__area article1">
+                <textarea class="text_area_1" id="textField" placeholder="Inserta el texto aquí."></textarea>
+                <div class="notice">
+                    <img src="img/group.svg" alt="signo exclamacion">
+                    <p class="advice"> Solo letras minúsculas y sin acentos.</p>
+                    </div>
+                <div class="buttons_enc buttons_dec">                    
+                    <button onclick="iniEnc()" id="btnEnc">Encriptar</button>
+                    <button onclick="iniDec()" id="btnDec">Desencriptar</button>
+                </div>                
+            </article>
+
+            <article class="text__area article2">
+                <div class="no_text">
+                    <img class="toon" src="img/dibujo.svg" alt="" srcset="">
+                    <p class="no_text_p1">Ningún mensaje encontrado.</p>
+                    <p class="no_text_p2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <textarea class="text_area_2" id="result" readonly="readonly"></textarea>
+                <div class="button_copy" style="visibility: hidden;">
+                    <button onclick="copyResult()" id="btnCopy">Copiar</button>
+                </div>
+            </article>
+
+        </section>        
+    </main>
+
+    <footer><p>&copy; Copyright 2024 - Alura-JaGen74 </p></footer>
+
+
+</html>

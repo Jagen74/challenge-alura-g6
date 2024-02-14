@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ html {
+   font-size: 62.5%;
+   font-family: 'Inter', sans-serif;
+   background: #F3F5FC;
+ }
+
+ body {
+   font-size: 1.6rem;   
+ }
+
+ .logo {
+   max-width: 200%;
+   margin: 1rem;
+   z-index: 3;
+ }
+
+ h1 {
+   font-size: 2rem;
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ .container {
+   width: 90%;   
+   margin: 0 auto;
+   padding: 2rem 0;   
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 3rem;
+ }
+
+ .text_area_1 {
+   resize: none;
+   text-decoration-color: #0A3871;
+   text-align: center;
+   width: 343px;
+   height: 444px;
+   font-size: 3rem;
+   border-radius: 32px;
+   margin-bottom: 10px;
+   background-color: #F3F5FC;
+   border: none;
+ }
+
+ .notice {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   margin-bottom: 2.5rem;
+ }
+
+ .text_area_2 {
+   resize: none;
+   text-align: center;   
+   width: 343px;
+   
+   font-size: 2.5rem;
+   border-radius: 32px;
+   border: none;
+   box-sizing: border-box;
+ }
+
+ .article2 {
+   background-color: #FFFFFF;
+   box-shadow: 0px 24px 32px -8px #00000014;
+   border-radius: 20px;
+   height: 10%;
+ }
+
+ .no_text{
+  text-align: center;
+  z-index: 2;  
+  position: absolute;  
+  align-items: center;
+  padding-left: .5rem;
+  margin-top: 10rem;
+ }
+
+ .toon{
+  display: none;
+ }
+
+ .no_text_p1{
+  font-weight: bold;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;  
+ }
+
+ .no_text_p2{    
+  font-size: smaller;    
+  justify-content: center;
+  align-items: center;
+ }
+
+ .buttons_enc,
+ .button_copy {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 2rem;
+ }
+
+ #btnEnc {
+   width: 90%;
+   border-radius: 24px;
+   padding: 24px;
+   background: #0A3871;
+   color: #FFFFFF;
+   border: 1px solid #0A3871;
+   cursor: pointer;
+   margin: 1rem;
+ }
+
+ #btnDec {
+   width: 90%;
+   border-radius: 24px;
+   padding: 24px;
+   background: #D8DFE8;
+   color: #0A3871;   
+   border: 1px solid #0A3871;
+   cursor: pointer;   
+ }
+
+ #btnCopy {
+   width: 90%;
+   border-radius: 24px;
+   padding: 24px;
+   background-color: #FFFFFF;
+   color: #0A3871;
+   border: 1px solid #0A3871;
+   cursor: pointer;
+ }
+
+ #btnEnc,
+ #btnDec {
+   width: 100%;
+ }
+
+ footer {   
+   text-align: center;
+   font-size: 1.4rem;
+   font-weight: 400;   
+   position: relative; /* O "static" */
+   bottom: 0;
+ }
+
+ /** Media Queries Area
+    Mobile View by Default */
+
+ /** Tablet View  */
+ @media (min-width: 768px) {
+   .container {
+     padding: 10px;
+   }
+
+   .no_text{
+    padding-top: 2rem;
+    padding-left: 20rem;
+   }
+
+   .logo {
+     margin: 4rem;
+   }
+
+   .notice {
+     display: flex;
+     justify-content: center;
+   }
+
+   .buttons_enc,
+   .button_copy {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+   }
+
+   #btnEnc,
+   #btnDec {
+     width: 360px;
+     transition-duration: 300ms;     
+   }
+
+   #btnCopy {
+     width: 90%;
+     transition-duration: 300ms;     
+   }
+
+   .text_area_1 {
+     width: 748px;
+     
+     margin-bottom: 20px;
+   }
+
+   .text_area_2 {
+     width: 748px;
+     
+     margin-bottom: 20px;
+   }
+ }   
+
+ /** Desktop View  */
+ @media (min-width: 900px) {
+    .logo {
+      display: inline;
+      margin-top: 4rem;
+      margin-left: 15rem;
+    }
+
+   .container {
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;   
+   }
+
+   .toon{
+    display: block;
+   }
+
+   .no_text{
+    margin-bottom: 100rem;
+    padding: 0 3.5rem ;
+    
+   }
+
+   .buttons_enc,
+   .button_copy {
+     display: flex;
+     flex-direction: row;
+     margin: 1rem auto;     
+     transition-duration: 500ms;
+   }
+
+   #btnEnc,
+   #btnDec {
+     width: 325px;
+     margin: 0;
+   }
+
+   .notice {
+     justify-content: start;
+     width: 100%;
+   }
+
+   .text_area_1 {
+     width: 680px;
+     height: 60vh;
+   }
+
+   .text_area_2 {
+     width: 400px;
+     height: 64vh;
+   }
+ }
+
+ /** End Media Queries  */
+
+ input:focus,
+ textarea:focus {
+   outline: none;
+   border-color: inherit;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+ }
+
+ #btnEnc:hover,
+ #btnDec:hover,
+ #btnCopy:hover{
+  transform: scale(1.035); 
+  transition-duration: 300ms;
+ }

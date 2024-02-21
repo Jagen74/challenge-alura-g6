@@ -16,10 +16,13 @@
    font-size: 1.6rem;   
  }
 
+ header{
+margin: auto; }
+
  .logo {
    max-width: 200%;
    margin: 1rem;
-   z-index: 3;
+   z-index: 5;
  }
 
  h1 {
@@ -45,6 +48,7 @@
    width: 343px;
    height: 444px;
    font-size: 3rem;
+   line-height: 200px;
    border-radius: 32px;
    margin-bottom: 10px;
    background-color: #F3F5FC;
@@ -62,18 +66,18 @@
    resize: none;
    text-align: center;   
    width: 343px;
-   
+   height: 10px;
    font-size: 2.5rem;
+   line-height: 200px;
    border-radius: 32px;
    border: none;
-   box-sizing: border-box;
+   box-sizing: border-box;   
  }
 
  .article2 {
    background-color: #FFFFFF;
    box-shadow: 0px 24px 32px -8px #00000014;
-   border-radius: 20px;
-   height: 10%;
+   border-radius: 20px;   
  }
 
  .no_text{
@@ -147,12 +151,24 @@
    width: 100%;
  }
 
- footer {   
+ footer {
+   display: flex;
+   justify-content: center;
    text-align: center;
    font-size: 1.4rem;
    font-weight: 400;   
    position: relative; /* O "static" */
    bottom: 0;
+ }
+
+ .icon {
+  margin-left: 1rem;
+  width: 3rem;
+  height: 3rem;
+ }
+
+ .icon:hover {
+  scale: 1.15;
  }
 
  .cora {    
@@ -265,6 +281,10 @@
    .text_area_2 {
      width: 400px;
      height: 64vh;
+   }
+
+   footer {
+    margin-top: 2rem;
    }
  }
 

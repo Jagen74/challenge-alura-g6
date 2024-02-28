@@ -150,12 +150,10 @@
 
  footer {
    display: flex;
-   justify-content: center;
+   justify-content: center;   
    text-align: center;
-   font-size: 1.4rem;
+   font-size: 1.3rem;
    font-weight: 400;   
-   position: relative; /* O "static" */
-   bottom: 0;
  }
 
  .icon {
@@ -215,14 +213,12 @@
    }
 
    .text_area_1 {
-     width: 748px;
-     
+     width: 748px;     
      margin-bottom: 20px;
    }
 
    .text_area_2 {
-     width: 748px;
-     
+     width: 748px;     
      margin-bottom: 20px;
    }
  }   
@@ -230,8 +226,8 @@
  /** Desktop View  */
  @media (min-width: 900px) {
     .logo {
-      display: inline;
-      margin-top: 4rem;
+      display: inline-block;
+      margin-top: 1rem;
       margin-left: 15rem;
     }
 
@@ -245,10 +241,13 @@
     display: block;
    }
 
-   .no_text{
-    margin-bottom: 100rem;
+   .no_text{    
     padding: 0 3.5rem ;
-    
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
    }
 
    .buttons_enc,

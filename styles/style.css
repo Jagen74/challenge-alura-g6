@@ -39,11 +39,11 @@
  }
 
  .text_area_1 {
-   resize: none;    
+   resize: none;
+   text-align: center;
    width: 343px;
    height: 444px;
    font-size: 3rem;   
-   border-radius: 32px;
    margin-bottom: 10px;
    background-color: #F3F5FC;
    border: none;
@@ -279,6 +279,7 @@
    .text_area_1 {
      width: 680px;
      height: 60vh;
+     text-align: start;
    }
 
    .text_area_2 {

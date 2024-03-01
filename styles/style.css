@@ -39,18 +39,22 @@
  }
 
  .text_area_1 {
-   resize: none;
-   text-decoration-color: #0A3871;
+   resize: none;   
    text-align: center;
    width: 343px;
    height: 444px;
    font-size: 3rem;
-   line-height: 200px;
+   line-height: 18rem;
    border-radius: 32px;
    margin-bottom: 10px;
    background-color: #F3F5FC;
    border: none;
+   color: #0A3871 ;
  }
+
+ .text_area_1::placeholder {
+  color: #0A3871;
+}
 
  .notice {
    display: flex;
@@ -65,10 +69,11 @@
    width: 343px;
    height: 10px;
    font-size: 2.5rem;
-   line-height: 200px;
+   line-height: 18rem;
    border-radius: 32px;
    border: none;
-   box-sizing: border-box;   
+   box-sizing: border-box;
+   color: #495057;   
  }
 
  .article2 {
